@@ -1,0 +1,1 @@
+DROP TABLE users, adresses, products, carts, purchases, products_purchased CASCADE
