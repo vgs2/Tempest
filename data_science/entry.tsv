@@ -1,0 +1,11 @@
+request_time	ip	url	user_agent	tags
+20	111.30.132.4	/signin Mozilla/5.0	(Linux; Android 8.0.0; SM-G960F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36	["fraud", "suspicius"]
+30	163.237.117.49	/signin Mozilla/5.0	(Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246	["fraud"]
+65	114.130.249.124	/home Mozilla/5.0	(Linux; Android 6.0.1; SM-G935S Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36	["suspicius"]
+33	114.130.249.124	/signin Mozilla/5.0	(iPhone9,4; U; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1	["regular"]
+23	254.44.31.25	/logout Mozilla/5.0	(Linux; Android 6.0.1; Nexus 6P Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36	["suspicius", "fraud"]
+10	191.55.12.130	/home Mozilla/5.0	(Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9	["regular"]
+5	39.56.168.194	/logout Mozilla/5.0	(Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246	["regular"]
+130	39.56.168.194	/home Mozilla/5.0	(Linux; Android 6.0.1; SM-G935S Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36	["regular"]
+65	117.181.101.87	/home Mozilla/5.0	(Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9	["fraud","suspicius", "tor"]
+10	117.181.101.87	/home Mozilla/5.0	(iPhone9,4; U; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1	["fraud", "suspicius"]
