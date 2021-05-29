@@ -40,3 +40,8 @@ INSERT INTO purchases_fact VALUES(11,2,0,0,1,'2021-05-29 19:30:47');
 INSERT INTO purchases_fact VALUES(11,4,0,0,1,'2021-05-29 19:30:47');
 INSERT INTO purchases_fact VALUES(11,5,0,0,2,'2021-05-29 19:30:47');
 INSERT INTO purchases_fact VALUES(11,6,0,0,2,'2021-05-29 19:30:47');
+
+INSERT INTO carts_fact VALUES (1,1,1);
+INSERT INTO carts_fact VALUES (2,2,1);
+INSERT INTO carts_fact VALUES (3,1,1);
+INSERT INTO carts_fact VALUES (0,4,1);

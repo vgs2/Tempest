@@ -18,21 +18,22 @@ CREATE TABLE adresses (
 
 CREATE TABLE products (
     product_id int PRIMARY KEY,
-    product_name VARCHAR(50),
-    cost FLOAT
+    product_name VARCHAR(50) UNIQUE NOT NULL,
+    cost FLOAT NOT NULL,
+    UNIQUE (product_name)
 );
 
 CREATE TABLE carts (
     cpf BIGINT REFERENCES users,
     product_id INT REFERENCES products,
-    amount INT,
+    amount INT NOT NULL,
     PRIMARY KEY (cpf, product_id)
 );
 
 CREATE TABLE purchases(
     purchase_id INT,
-    purchase_time TIMESTAMP,
-    adresses_id INT REFERENCES adresses,
+    purchase_time TIMESTAMP NOT NULL,
+    adresses_id INT REFERENCES adresses NOT NULL,
     PRIMARY KEY (purchase_id)
 );
 
@@ -40,6 +41,6 @@ CREATE TABLE purchases(
 CREATE TABLE products_purchased(
     purchase_id INT REFERENCES purchases,
     product_id INT REFERENCES products,
-    amount INT CHECK (amount > 0),
+    amount INT NOT NULL CHECK (amount > 0),
     PRIMARY KEY (purchase_id, product_id)
 );

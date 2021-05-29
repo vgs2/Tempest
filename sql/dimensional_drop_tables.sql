@@ -1,0 +1,1 @@
+DROP TABLE products_dimension, users_dimension, adresses_dimension, purchases_fact, carts_fact CASCADE
