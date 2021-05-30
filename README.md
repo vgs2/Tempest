@@ -1,16 +1,20 @@
 # Intruções de uso:  
 Assim como no desafio, este repositório está dividido em duas partes, uma que lida com banco de dados (que é subdividida em mais duas partes, uma para a modelagem relacional e outra para a modelagem dimensional) e uma outra parte que lida com o cálculo de entropia.  
-  
-## Para rodar a parte do banco de dados com modelagem relacional, faça as suguinte ações utilizando o banco de dados PostgreSQL:  
-1 - Crie as tabelas utilizando os comandos contidos no arquivo 'sql/relational_create_table.sql'  
-2 - Popule a tabela utilizando os comandos contidos no arquivo 'sql/relational_populate_tables.sql'  
-3 - Por último faça as queries presentes no arquivo 'sql/relational_queries.sql'  
-  
-## Para rodar a parte do banco de dados com modelagem dimensional, faça as suguinte ações utilizando o banco de dados PostgreSQL:  
-1 - Crie as tabelas utilizando os comandos contidos no arquivo 'sql/dimensional_create_table.sql'  
-2 - Popule a tabela utilizando os comandos contidos no arquivo 'sql/dimensional_populate_tables.sql'  
-3 - Por último faça as queries presentes no arquivo 'sql/dimensional_queries.sql'  
 
-Para rodar a parte de cálculo de entropia será necessário ter acesso a um servidor jupyter notebook com as bibliotecas pandas e numpy instalados e abrir o arquivo 'data_science/notebook.ipynb'. No arquivo está a implementação do desafio.  
+## Requisitos  
+1 - Jupyter Notebook  
+2 - Bibliotecas do python: pandas e numpy
+2 - Docker  
+3 - Docker-compose  
 
+## Para inicializar o banco de dados, criar as tabelas, as povoar e fazer as consultas:
+1 - Com o terminal vá para a pasta sql e execute o seguinte comando: sudo docker-compose up  
+2 - Com o banco de dados inicializado é só se conectar ao terminal do banco utilizando o comando: sudo docker exec -it postgres-tempest  psql -U postgres  
+3 - Agora basta rodar os scripts encontrados em dimensional_queries.sql e em relational_queries.sql para fazer as consultas dos bancos dimensionais e relacionais, respectivamente.
+  
+  
+  
+## Para rodar a parte de cálculo de entropia:
+É só abrir o arquivo data_science/notebook.ipynb e executar as células na ordem apresentada!    
+  
 Obrigado!
